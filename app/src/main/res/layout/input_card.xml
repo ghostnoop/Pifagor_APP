@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparly"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screen_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/sans"
+        android:text="Welcome\nback"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:outlineProvider="none">
+
+        <ImageButton
+            android:id="@+id/sign_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/ic_circleshape"
+            android:elevation="5dp"
+            android:outlineProvider="none"
+            app:srcCompat="@drawable/ic_back" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:elevation="10dp"
+            android:outlineProvider="none"
+            app:cardCornerRadius="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/Sign_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/sans"
+                    android:text="Please Sign Up"
+                    android:textColor="#330000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/sans"
+                    android:hint="Имя"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#330000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/sans"
+                    android:hint="Название"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textColor="#330000" />
+
+                <EditText
+                    android:id="@+id/city_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/sans"
+                    android:hint="Город / Субъект"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textColor="#330000" />
+
+                <EditText
+                    android:id="@+id/type_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/sans"
+                    android:hint="Вид деятельности"
+                    android:inputType="textPassword"
+                    android:textColor="#330000"
+                    android:textColorHighlight="#ffcfa3"
+                    android:visibility="visible" />
+                <EditText
+                    android:id="@+id/mode_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/sans"
+                    android:hint="Режим налогообложения"
+                    android:inputType="textPassword"
+                    android:textColor="#330000"
+                    android:textColorHighlight="#ffcfa3"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/forgotpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="160dp"
+                        android:layout_marginBottom="50dp"
+                        android:fontFamily="@font/sans"
+                        android:text="@string/frgpass"
+                        android:textAllCaps="false"
+                        android:textColor="#ffcfa3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/sans"
+                        android:text="@string/sgnup"
+                        android:textAllCaps="false"
+                        android:textColor="#ffcfa3"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="-100dp"
+        android:elevation="0dp"
+        android:foregroundGravity="bottom"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/white_border" />
+</LinearLayout>
